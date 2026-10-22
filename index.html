@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Koray Kayan – CV</title>
+<style>
+:root{
+  --bg:#fbfbfd; --ink:#1d1d1f; --mute:#6e6e73; --line:#d2d2d7; --link:#0066cc; --chip:#ececf0;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#000;--ink:#f5f5f7;--mute:#a1a1a6;--line:#38383a;--link:#2997ff;--chip:#1c1c1e}
+}
+:root[data-theme="dark"]{--bg:#000;--ink:#f5f5f7;--mute:#a1a1a6;--line:#38383a;--link:#2997ff;--chip:#1c1c1e}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+main{max-width:860px;margin:0 auto;padding:32px 24px 96px}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:6px}
+
+.bar{display:flex;justify-content:flex-end;margin-bottom:40px}
+.lang{display:inline-flex;background:var(--chip);border-radius:999px;padding:3px}
+.lang button{font:inherit;font-size:14px;font-weight:600;border:0;background:transparent;color:var(--mute);
+  padding:6px 16px;border-radius:999px;cursor:pointer;min-width:48px}
+.lang button[aria-pressed="true"]{background:var(--bg);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.18)}
+
+header{padding-bottom:56px}
+h1{font-size:clamp(44px,9vw,84px);line-height:1.02;letter-spacing:-0.035em;font-weight:700;margin:0 0 16px}
+.tagline{font-size:clamp(21px,3.4vw,30px);letter-spacing:-0.01em;color:var(--mute);margin:0 0 28px;font-weight:500}
+.contact{display:flex;flex-wrap:wrap;gap:6px 28px;margin:0;padding:0;list-style:none;font-size:15px}
+
+section{display:grid;grid-template-columns:200px 1fr;gap:12px 40px;padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:15px;font-weight:600;margin:6px 0 0;color:var(--mute)}
+.body{max-width:62ch}
+.body p{margin:0}
+
+.job{margin:0 0 36px}
+.job:last-child{margin-bottom:0}
+h3{font-size:21px;line-height:1.25;letter-spacing:-0.01em;font-weight:600;margin:0}
+.role{color:var(--mute);margin:2px 0 0}
+.date{color:var(--mute);font-size:15px;margin:2px 0 12px}
+ul{margin:0;padding-left:1.1em}
+li{margin:0 0 6px}
+li::marker{color:var(--mute)}
+
+.langs,.skills{list-style:none;padding:0;margin:0}
+.langs li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line);margin:0}
+.langs li:first-child{padding-top:0}
+.langs li:last-child{border-bottom:0;padding-bottom:0}
+.langs span:last-child{color:var(--mute)}
+.skills li{margin:0 0 8px}
+
+.btn{display:inline-block;margin-top:20px;background:var(--link);color:#fff;font-weight:600;font-size:16px;
+  padding:11px 22px;border-radius:999px}
+.btn:hover{text-decoration:none;opacity:.9}
+
+@media (max-width:680px){
+  main{padding:24px 20px 72px}
+  section{grid-template-columns:1fr;padding:32px 0}
+  h2{margin:0 0 4px}
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="bar">
+    <div class="lang" role="group" aria-label="Språk / Language">
+      <button type="button" data-lang="sv" aria-pressed="true">SV</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <header>
+    <h1>Koray Kayan</h1>
+    <p class="tagline" data-en="Dedicated problem solver">Engagerad problemlösare</p>
+    <ul class="contact">
+      <li>Spånga, Stockholm</li>
+      <li><a href="tel:0725498622">072 549 86 22</a></li>
+      <li><a href="mailto:koraykayan5@gmail.com">koraykayan5@gmail.com</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h2 data-en="Profile">Profil</h2>
+    <div class="body">
+      <p data-en="I am a dedicated and motivated person who enjoys providing good service and solving problems in an efficient and creative way. With experience of working with people of different ages, I have developed good communication skills and flexibility. I look forward to contributing to a positive customer experience and being part of a successful team.">Jag är en engagerad och motiverad person som trivs med att ge god service och lösa problem på ett effektivt och kreativt sätt. Med erfarenhet av att arbeta med människor i olika åldrar har jag utvecklat god kommunikationsförmåga och flexibilitet. Jag ser fram emot att bidra till en positiv kundupplevelse och vara en del av ett framgångsrikt team.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-en="Experience">Erfarenhet</h2>
+    <div class="body">
+      <article class="job">
+        <h3 data-en="Childcare assistant (Part-time)">Barnskötare (Deltid)</h3>
+        <p class="role">Solhemsskolan, Stockholm</p>
+        <p class="date" data-en="January 2024 – June 2024">Januari 2024 – Juni 2024</p>
+        <ul>
+          <li data-en="Provided a safe, social and active break-time and classroom environment for pupils in preschool class to grade 3.">Erbjöd en trygg, social och aktiv rast- och klassrumsmiljö för elever F–åk3.</li>
+          <li data-en="Offered help and assistance to pupils in the classroom during a conflict or a task.">Erbjuda hjälp och assistens för eleverna i klassrummet vid en konflikt eller arbetsuppgift.</li>
+          <li data-en="Built a good relationship with teachers and guardians.">Skapa ett god relation med lärare och vårdnadshavare.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <h3 data-en="IT Trainer (Summer job)">IT Utbildare (Sommarjobb)</h3>
+        <p class="role">Rookie Startups, Stockholm</p>
+        <p class="date" data-en="June 2023 – July 2023">Juni 2023 – Juli 2023</p>
+        <ul>
+          <li data-en="Trained seniors in using mobile phones and apps.">Utbildade pensionärer i användning av mobiltelefoner och applikationer.</li>
+          <li data-en="Adapted explanations to meet individual needs and different levels of technical understanding.">Anpassade förklaringar för att möta individuella behov och olika tekniska förståelsenivåer.</li>
+          <li data-en="Developed strong communication skills, patience and creative problem solving.">Utvecklade starka kommunikationsfärdigheter, tålamod och kreativ problemlösning.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <h3 data-en="Yard cleaner (Summer job)">Gårdsstädare (Sommarjobb)</h3>
+        <p class="role">Björnentreprenad (BEAB), Stockholm</p>
+        <p class="date" data-en="June 2021 – July 2021">Juni 2021 – Juli 2021</p>
+        <ul>
+          <li data-en="Carried out practical tasks such as sweeping, weeding and picking up litter under physically demanding conditions.">Utförde praktiska arbetsuppgifter som sopning, rensning av ogräs och plocka skräp under fysiskt krävande förhållanden.</li>
+          <li data-en="Showed endurance and work ethic by completing tasks carefully and efficiently despite challenging conditions.">Visade uthållighet och arbetsmoral genom att slutföra uppgifter noggrant och effektivt trots utmanande förhållanden.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <h3 data-en="Teaching assistant (Work experience placement)">Lärarassistent (Prao)</h3>
+        <p class="role">Vinsta Grundskola Östra, Stockholm</p>
+        <p class="date" data-en="April 2018 – April 2018">April 2018 – April 2018</p>
+        <ul>
+          <li data-en="Helped pupils in lower and middle school with schoolwork and understanding assignments.">Hjälpte elever i låg- och mellanstadiet med skolarbeten och förståelse av uppgifter.</li>
+          <li data-en="Contributed to a positive learning environment through support and encouragement.">Bidrog till en positiv lärmiljö genom stöd och uppmuntran.</li>
+          <li data-en="Developed leadership skills and an understanding of the importance of clear communication in group settings.">Utvecklade ledarskapsförmåga och förståelse för vikten av tydlig kommunikation i gruppsammanhang.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-en="Education">Utbildning</h2>
+    <div class="body">
+      <article class="job">
+        <h3>Nackademin yrkeshögskola, Solna</h3>
+        <ul style="margin-top:12px">
+          <li data-en="Programming (CSS, HTML)">Programmering (CSS, HTML)</li>
+          <li data-en="User-centered design (Figma)">Användarcentrerad design (Figma)</li>
+          <li data-en="Accessibility">Tillgänglighet</li>
+        </ul>
+      </article>
+      <article class="job">
+        <h3 data-en="KTH Royal Institute of Technology, Stockholm">Kungliga Tekniska Högskolan, Stockholm</h3>
+        <p class="role" data-en="Industrial Engineering – Bachelor of Engineering">Industriell Teknik – Högskoleingenjör</p>
+        <p class="date" data-en="August 2024 – October 2024">Augusti 2024 – Oktober 2024</p>
+      </article>
+      <article class="job">
+        <h3>Stockholm Science &amp; Innovation School, Kista</h3>
+        <p class="role" data-en="Upper secondary diploma – Technology Science">Gymnasieexamen – Teknikvetenskap</p>
+        <p class="date" data-en="August 2021 – July 2024">Augusti 2021 – Juli 2024</p>
+        <ul>
+          <li data-en="In-depth knowledge in technical areas such as coding, 3D design and construction.">Fördjupad kunskap inom teknikområden som kodning, 3D design och konstruktion.</li>
+          <li data-en="Developed problem-solving skills and perseverance by handling complex subjects.">Utvecklade problemlösningsförmåga och uthållighet genom att hantera komplexa ämnen.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-en="Languages">Språk</h2>
+    <div class="body">
+      <ul class="langs">
+        <li><span data-en="Swedish">Svenska</span><span data-en="Native">Modersmål</span></li>
+        <li><span data-en="English">Engelska</span><span data-en="Fluent">Flytande</span></li>
+        <li><span data-en="Turkish">Turkiska</span><span data-en="Fluent">Flytande</span></li>
+        <li><span data-en="German">Tyska</span><span data-en="Good knowledge">Goda kunskaper</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-en="Skills">Färdigheter</h2>
+    <div class="body">
+      <ul class="skills">
+        <li data-en="Very good computer skills">Mycket god datorvana</li>
+        <li data-en="Strong communication skills">Stark kommunikationsförmåga</li>
+        <li data-en="Problem solving and creativity">Problemlösning och kreativitet</li>
+        <li data-en="Team player with a positive attitude">Lagspelare med positiv inställning</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-en="Contact information">Kontaktinformation</h2>
+    <div class="body">
+      <p>Spånga, Stockholm<br>
+      <a href="tel:0725498622">072 549 86 22</a><br>
+      <a href="mailto:koraykayan5@gmail.com">koraykayan5@gmail.com</a></p>
+      <a class="btn" href="https://www.linkedin.com/in/koray-kayan-797b4b286/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  var items = document.querySelectorAll('[data-en]');
+  for (var i = 0; i < items.length; i++) items[i].setAttribute('data-sv', items[i].innerHTML);
+  var buttons = document.querySelectorAll('.lang button');
+  var titles = {sv: 'Koray Kayan – CV', en: 'Koray Kayan – Résumé'};
+
+  function setLang(lang, save){
+    for (var i = 0; i < items.length; i++) {
+      items[i].innerHTML = lang === 'en' ? items[i].getAttribute('data-en') : items[i].getAttribute('data-sv');
+    }
+    document.documentElement.lang = lang;
+    document.title = titles[lang];
+    for (var j = 0; j < buttons.length; j++) {
+      buttons[j].setAttribute('aria-pressed', buttons[j].getAttribute('data-lang') === lang ? 'true' : 'false');
+    }
+    if (save) { try { localStorage.setItem('cv-lang', lang); } catch (e) {} }
+  }
+
+  for (var k = 0; k < buttons.length; k++) {
+    buttons[k].addEventListener('click', function(){ setLang(this.getAttribute('data-lang'), true); });
+  }
+
+  var saved = null;
+  try { saved = localStorage.getItem('cv-lang'); } catch (e) {}
+  if (saved === 'en') setLang('en', false);
+})();
+</script>
+</body>
+</html>
